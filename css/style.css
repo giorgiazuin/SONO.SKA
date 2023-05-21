@@ -19,7 +19,7 @@ header h1 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 150px;
     margin-bottom: 10px 10px;
-    /*font-family:Merriweather;*/
+    /*font-family:Ubuntu;*/
 }
 
 /* Link della barra di navigazione */
@@ -41,9 +41,12 @@ header ul {
     padding: 10px 20px;
     border-radius: 10px;
   }
+ 
 
-ul {
+ul li {
     list-style-type: none;
+    margin-bottom: 20px;
+    
 }
 
 nav ul li a:hover {
@@ -126,12 +129,13 @@ footer section {
     display: flex;
     background-color: #1c1f22;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     color: #fff;
 }
 
 footer li + li {
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 footer img {
@@ -146,6 +150,22 @@ footer img {
   
   /* Aggiungi effetto di hover all'immagine */
 #SKA:hover {
+    transform: scale(1.1);
+  }
+
+  /* Aggiungi effetto di transizione all'immagine */
+#SKA_tag {
+    transition: transform 0.3s ease-in-out;
+    max-width: 30%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Aggiungi effetto di hover all'immagine */
+#SKA_tag:hover {
     transform: scale(1.1);
   }
 
@@ -198,5 +218,7 @@ main section div {
 }
 i {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 20px; 
+    font-size: 40px; 
+    margin-bottom:10px ;
+    margin-top: 300px;
 }
