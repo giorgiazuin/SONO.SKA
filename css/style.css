@@ -1,7 +1,7 @@
 /* Stile generale della pagina */
 body {
-    font-family: 'inter', sans-serif;
-    background-repeat: no-repeat;
+    font-family: 'ubuntu', sans-serif;
+    /*background-repeat: no-repeat;*/
     background-attachment: fixed;
     background-size: cover;
 }
@@ -76,6 +76,22 @@ main {
     display: flex;
     text-align: center;
     align-items: center;
+}
+
+.active-link{
+    position: relative;
+}
+
+.active-link::after {
+    content:"";
+    position: absolute;
+    bottom: -2px;
+    left:0;
+    width:100%;
+    height: 8px;
+    background-color: #fafafa;
+
+
 }
 
 /* Titoli delle sezioni */
